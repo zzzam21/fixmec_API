@@ -9,7 +9,7 @@ colorama==0.4.6
 cryptography==46.0.3
 experta==1.9.4
 fastapi
-frozendict
+frozendict==2.4.6
 greenlet==3.2.4
 h11==0.8.1
 h2==3.2.0
@@ -42,5 +42,6 @@ typing_extensions==4.15.0
 uvicorn
 watchfiles==1.1.1
 websockets==15.0.1
+
 
 
