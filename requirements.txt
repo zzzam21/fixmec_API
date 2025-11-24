@@ -8,9 +8,9 @@ chardet==3.0.4
 click==8.3.0
 colorama==0.4.6
 cryptography==46.0.3
-experta==1.9.4
+experta
 fastapi==0.121.3
-frozendict==1.2
+frozendict
 greenlet==3.2.4
 h11==0.8.1
 h2==3.2.0
@@ -43,6 +43,7 @@ typing_extensions==4.15.0
 uvicorn==0.38.0
 watchfiles==1.1.1
 websockets==15.0.1
+
 
 
 
