@@ -1,3 +1,10 @@
+import collections.abc
+import collections
+
+# Parche necesario para Experta en Python 3.10+
+if not hasattr(collections, "Mapping"):
+    collections.Mapping = collections.abc.Mapping
+
 from SBC.diagnostic_engine import Sintoma, DiagnosticoMoto
 
 def procesar_diagnostico(respuestas):
