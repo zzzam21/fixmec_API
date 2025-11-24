@@ -1,3 +1,17 @@
+import collections.abc
+import collections
+
+# --- INICIO DEL PARCHE DE COMPATIBILIDAD ---
+# Python 3.10+ eliminó collections.Mapping, pero experta lo necesita.
+# Esto agrega las referencias faltantes de nuevo a collections.
+if not hasattr(collections, "Mapping"):
+    collections.Mapping = collections.abc.Mapping
+if not hasattr(collections, "MutableMapping"):
+    collections.MutableMapping = collections.abc.MutableMapping
+if not hasattr(collections, "Iterable"):
+    collections.Iterable = collections.abc.Iterable
+# --- FIN DEL PARCHE ---
+
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 from controller_diagnostico import procesar_diagnostico
